@@ -1,10 +1,9 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/discount-auto-repair/', // Add this line
+  base: '/', // ✅ fix for custom domain
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
